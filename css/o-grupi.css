@@ -1,0 +1,92 @@
+body {
+  background-color: lightgray;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+#slicka:hover {
+  transform: scale(1.1, 1.1);
+}
+#slicka {
+  padding: 20px;
+  height: 280px;
+  width: 500px;
+}
+.text {
+  margin-top: 15px;
+  margin-right: 10px;
+  font-size: 21px;
+}
+.img1 {
+  width: 450px;
+  height: 200px;
+  padding: 20px;
+}
+@keyframes animacija2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.img1 {
+  animation: animacija2 3s infinite;
+}
+.text1 {
+  font-size: 21px;
+  text-decoration: underline;
+}
+
+@keyframes animacija3 {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+.img2 {
+  animation: animacija3 3s infinite;
+}
+
+#sarenaslika {
+  width: 500px;
+  height: 280px;
+}
+@media (max-width: 864px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  #slicka {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .text {
+    max-width: 70%;
+    margin: 20px auto;
+  }
+  .img1 {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .img2 {
+    max-width: 100%;
+    margin: 0px 20px;
+  }
+  #sarenaslika {
+    max-width: 100%;
+  }
+}

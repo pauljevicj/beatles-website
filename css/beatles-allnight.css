@@ -1,0 +1,75 @@
+.prvired {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.opis {
+  font-size: 21px;
+  margin: 30px;
+}
+
+.lista {
+  text-align: center;
+  margin: 0px 100px;
+  list-style: none;
+}
+
+form {
+  margin: 0 20px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: darkcyan;
+  padding-top: 15px;
+}
+
+ul {
+  font-size: 21px;
+  padding-top: 0;
+  margin-top: 0%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border: 2px solid blue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: lightblue;
+  color: blue;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid blue;
+  border-radius: 4px;
+  background-color: lightblue;
+  color: blue;
+}
+
+@media (max-width: 562px) {
+  h1{
+    font-size: 30px;
+  }
+
+  .opis, .lista {
+    font-size: 20px;
+  }
+}
